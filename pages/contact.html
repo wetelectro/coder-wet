@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ecommerce - Contacto</title>
+		<link rel="stylesheet" href="./../css/styles.css" />
+	</head>
+	<body>
+		<!-- Header -->
+		<header class="header">
+			<nav>
+				<ul>
+					<li class="header__link"><a href="./tendencias.html">Tendencias</a></li>
+					<li class="header__link"><a href="./ofertas.html">Ofertas</a></li>
+					<li class="header__logotipo">
+						<a href="/">
+							<span>CompraLoca</span>
+							<img src="/img/loco.png" alt="loco_icon">
+						</a>
+					</li>
+					<li class="header__link"><a href="./contact.html">Contacto</a></li>
+					<li class="header__link"><a href="./about.html">Nosotros</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- Contenido principal -->
+		<main>
+			<h1 class="pagetitle">Contacto</h1>
+
+			<!-- Formulario -->
+			<form action="" class="contact_form">
+				<!-- Campo de email -->
+				<div class="form_group--col">
+					<label for="email" class="form_label">Email</label>
+					<input
+						type="email"
+						id="email"
+						placeholder="email@mail.com"
+					/>
+				</div>
+				<!-- Campo de tipo de usuario -->
+				<div class="form_group--col">
+					<label for="user_type" class="form_label">Tipo de Usuario</label>
+					<select name="user_type" id="user_type">
+						<option value="vendedoroficial">
+							Vendedor Oficial
+						</option>
+						<option value="vendedorparticular">
+							Vendedor Particular
+						</option>
+						<option value="comprado" selected>Comprador</option>
+					</select>
+				</div>
+				<!-- Campo de mensaje -->
+				<div class="form_group--col">
+					<label for="message" class="form_label">Mensaje</label>
+					<textarea
+						name="message"
+						id="message"
+						cols="30"
+						rows="10"
+						placeholder="Ingrese su mensaje para nosotros..."
+					></textarea>
+				</div>
+				<!-- Checkboxes de categorias -->
+				<div class="form_group--col">
+					<label class="form_label">¿Que desea comprar en nuestra tienda?</label>
+					<div class="form_grid">
+						<label for="informatica"
+						><input
+							type="checkbox"
+							id="informatica"
+						/>Informatica</label
+						>
+						<label for="electronica"
+							><input
+								type="checkbox"
+								id="electronica"
+							/>Electronica</label
+						>
+						<label for="alimentos"
+							><input
+								type="checkbox"
+								id="alimentos"
+							/>Alimentos</label
+						>
+						<label for="indumentaria"
+							><input
+								type="checkbox"
+								id="indumentaria"
+							/>Indumentaria</label
+						>
+						<label for="juguetes"
+							><input type="checkbox" id="juguetes" />Juguetes</label
+						>
+						<label for="muebles"
+							><input type="checkbox" id="muebles" />Muebles</label
+						>
+						<label for="herramientas"
+							><input
+								type="checkbox"
+								id="herramientas"
+							/>Herramientas</label
+						>
+						<label for="salud"
+							><input type="checkbox" id="salud" />Salud</label
+						>
+					</div>
+				</div>
+				<!-- Botones -->
+				<div class="form_group">
+					<input type="reset" value="Reset" class="button"/>
+					<input type="submit" value="Enviar" class="button"/>
+				</div>
+			</form>
+
+			<div class="main__line"></div>
+		</main>
+
+		<!-- Footer -->
+		<footer class="footer">
+			<div>
+				<p>Email : atencion@compraloca.com</p>
+				<p>Telefono : 2674 - 8468</p>
+				<p>Copyright © 2021 Agustin Wet</p>
+			</div>
+			<div class="footer__map_wrapper">
+				<img class="footer__map_img" src="/img/map_image.png" alt="Map">
+			</div>
+			<div>
+				<p>Av. Rivadavia 5093, Piso 5, CP 1344, Caballito, CABA</p>
+				<p>Horarios : 8:00hrs - 17:00hrs, Lun - Vie</p>
+			</div>
+		</footer>
+	</body>
+</html>

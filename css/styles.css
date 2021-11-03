@@ -1,0 +1,331 @@
+/*  Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+body{
+	font-family: 'Roboto', sans-serif;
+	color: #242424;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Header */
+.header {
+	background: #ee4a36;
+	padding: 0.5rem;
+}
+.header nav ul {
+	display: flex;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	place-content: center;
+	align-items: center;
+}
+.header__link{
+	padding: 0.5rem 1rem;
+}
+.header__link a {
+	color: white;
+    text-decoration: none;
+}
+.header__link a:hover {
+	color: #ffee71;
+	filter: drop-shadow(0 0 5px #00000060);
+}
+.header__logotipo{
+	font-size: 200%;
+}
+.header__logotipo a {
+	display: flex;
+    color: white;
+    text-decoration: none;
+}
+.header__logotipo a span {
+	margin: 0 2.5px 0 0;
+}
+.header__logotipo a img {
+	width: 40px;
+    height: 40px;
+}
+.header__logotipo:hover{
+    filter: drop-shadow(0 0 5px #00000060);
+}
+
+/* Logotipo */
+.logotipo {
+	font-size: 200%;
+	filter: drop-shadow(0 0 10px #22222240);
+}
+.logotipo > * {
+	text-decoration: none;
+}
+.logotipo a{
+	display: flex;
+}
+.logotipo:hover{
+	filter: drop-shadow(0 0 10px #22222290);
+}
+.logotipo a img{
+	height: 40px;
+    padding: 0 0.5rem;
+}
+
+/* Main Section */
+main{
+	padding: 0 5vw;
+}
+
+/* Page titles */
+.pagetitle{
+	padding: 1rem 2.5px;
+    border-top: solid 1px #e5e5e5;
+    border-bottom: solid 1px #e5e5e5;
+}
+
+.main__line{
+	border-bottom: solid 1px #e5e5e5;
+    margin: 2rem 0 4rem 0;
+}
+
+/* Footer */
+.footer{
+	background: #ee4a36;
+    padding: 1rem 5vw;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+}
+.footer div{
+	text-align: left;
+    align-self: center;
+}
+.footer__map_wrapper{
+	height: 15vh;
+	width: 100%;
+}
+.footer__map_img{
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+/*Table styles*/
+table {
+	background: linear-gradient(45deg, rgb(13, 143, 163), rgb(44, 116, 80), rgb(182, 135, 15));
+    color: #ffffff;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+table thead {
+	font-size: 125%;
+	text-align: left;
+}
+tbody td,
+thead th {
+	border: solid 3px #292929;
+	padding: 1rem;
+}
+
+/* Oferta link */
+.link_oferta {
+	color: red;
+}
+.link_oferta > h2 {
+	padding: 1.5rem;
+    text-align: center;
+    background: yellow;
+    animation-name: titilar;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+}
+@keyframes titilar {
+    0%{
+        color: yellow;
+        background: red;
+    }
+    100%{
+        color: red;
+        background: yellow;
+    }
+}
+
+.link_oferta--rainbow{
+	background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+    background-size: 1500% 2000%;
+    animation-name: rainbow;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+.link_oferta--rainbow *{
+	color: #ffffff;
+    mix-blend-mode: difference;
+}
+@keyframes rainbow {
+	0%{	background-position:0% 50% }
+    50%{ background-position:100% 50% }
+    100%{ background-position:0% 50% }
+}
+
+/* Slider */
+#slider{
+    height: 40vh;
+    background: dimgray;
+}
+#slider img{
+	width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+/* Image Galery */
+.image_galery{
+	display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+}
+@media screen and (min-width : 1024px) {
+	.image_galery{
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+}
+.image_galery img{
+	width: 100%;
+    height: 20vh;
+    filter: drop-shadow(0 0 6px #00000020);
+    object-fit: cover;
+	transition: 0.3s;
+}
+.image_galery img:hover{
+	transform: scale(1.3);
+	z-index: 99;
+}
+
+/* Products */
+.product_filter{
+	padding: 1rem 2rem;
+    background: #c8c8c8;
+}
+.product_filter form{
+	display: flex;
+	flex-direction: column;
+	row-gap: 0.5rem;
+}
+@media screen and (min-width : 768px) {
+	.product_filter form{
+		grid-template-columns: 3fr 2fr 2fr 1fr;
+		display: grid;
+		grid-gap: 3%;
+	}
+}
+
+/* Products - grid */
+.product_grid{
+	display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+    padding: 2rem;
+    background: #00000010;
+}
+@media screen and (min-width : 480px) {
+	.product_grid{
+		grid-template-columns: 1fr 1fr;
+	}
+}
+@media screen and (min-width : 768px) {
+	.product_grid{
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+}
+@media screen and (min-width : 1024px) {
+	.product_grid{
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+	}
+}
+.product_item{
+	display: flex;
+    flex-direction: column;
+    background: #dbdbdb;
+    border-radius: 10px;
+	cursor: pointer;
+}
+.product_item:hover{
+	filter: brightness(1.1) drop-shadow(0 0 10px #00000030);
+}
+.product_price{
+	position: absolute;
+    background: #ee4a36;
+	z-index: 2;
+    padding: 0.25rem;
+    font-weight: 600;
+    color: white;
+    bottom: -0.4rem;
+    right: 10px;
+    filter: drop-shadow(2px 4px 3px #00000020);
+}
+.product_item__img_wrapper{
+	position: relative;
+	height: 150px;
+}
+.product_item__img_wrapper img{
+	width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+	filter: saturate(0.75);
+}
+.product_item__info_wrapper{
+	padding: 0.5rem 1rem;
+}
+.product_item__info_name{
+font-size: 120%;
+}
+.product_item__info_description{
+	color: #00000070;
+    margin: 0.4rem 0;
+}
+
+/* Contact Form */
+.contact_form{
+	display: flex;
+    flex-direction: column;
+    row-gap: 1.2rem;
+}
+.form_group{
+	display: flex;
+	column-gap: 1rem;
+}
+.form_group--col{
+	flex-direction: column;
+}
+.form_grid{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 0.4rem;
+}
+
+/** UI elements **/
+/* Buttons */
+.button{
+	border: none;
+    background: #ee4a36;
+    color: white;
+    padding: 0.4rem 1rem;
+	cursor: pointer;
+}
+.button:hover{
+	background: #da3520;
+	transition: 0.3s;
+	transform: scale(1.1);
+}
+/* Form elements */
+.form_label{
+	padding-bottom: 0.4rem;
+    display: block;
+}
