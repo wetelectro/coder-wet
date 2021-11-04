@@ -1,0 +1,59 @@
+/* Header */
+.header {
+	background: #ee4a36;
+	padding: 0.5rem;
+
+	nav ul {
+		display: flex;
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		place-content: center;
+		align-items: center;
+	}
+
+	&__link {
+		display: none;
+		padding: 0.5rem 1rem;
+
+		@include media-768{
+			display: inline-block;
+		}
+
+		a {
+			color: white;
+			text-decoration: none;
+			&:hover {
+				color: #ffee71;
+				filter: drop-shadow(0 0 5px #00000060);
+			}
+		}
+	}
+
+	&__logotipo {
+		font-size: 200%;
+
+		a {
+			display: flex;
+			place-items: center;
+			color: white;
+			text-decoration: none;
+
+			&:hover{
+				color: #ffee71;;
+			}
+
+			span {
+				margin: 0 2.5px 0 0;
+			}
+			img {
+				width: 40px;
+				height: 40px;
+			}
+		}
+
+		&:hover {
+			filter: drop-shadow(0 0 5px #00000060);
+		}
+	}
+}

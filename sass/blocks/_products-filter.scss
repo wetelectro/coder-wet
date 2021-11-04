@@ -1,0 +1,21 @@
+/* Products - Filter */
+.product_filter{
+	padding: 1rem 2rem;
+    background: #c8c8c8;
+
+    form{
+        display: flex;
+        flex-direction: column;
+        row-gap: 0.5rem;
+
+        *{
+            padding: 0.3rem 0.5rem;
+        }
+
+        @include media-768{
+            grid-template-columns: 3fr 2fr 2fr 1fr;
+            display: grid;
+            grid-gap: 3%;
+        }
+    }
+}

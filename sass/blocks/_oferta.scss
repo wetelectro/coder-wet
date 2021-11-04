@@ -1,0 +1,25 @@
+/* Oferta link */
+.link_oferta {
+	color: red;
+
+    h2{
+        padding: 1.5rem;
+        text-align: center;
+        background: yellow;
+        animation-name: titilar;
+        animation-duration: 500ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: cubic-bezier(0.68, -0.55, 0.27, 1.55);
+    }
+}
+
+@keyframes titilar {
+    0%{
+        color: yellow;
+        background: red;
+    }
+    100%{
+        color: red;
+        background: yellow;
+    }
+}

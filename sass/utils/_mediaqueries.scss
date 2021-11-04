@@ -1,0 +1,15 @@
+@mixin media-480 {
+    @media screen and (min-width : 480px) {
+        @content;
+    }
+}
+@mixin media-768 {
+    @media screen and (min-width : 768px) {
+        @content;
+    }
+}
+@mixin media-1024 {
+    @media screen and (min-width : 1024px) {
+        @content;
+    }
+}

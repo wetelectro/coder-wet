@@ -5,7 +5,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Ecommerce - Home</title>
-		<link rel="stylesheet" href="./css/styles.css" />
+		<link rel="stylesheet" href="./css/sass.css"/>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	</head>
 	<body>
 		<!-- Header -->
@@ -29,9 +30,39 @@
 		<!-- Contenido principal -->
 		<main>
 			<!-- Slider de Partners -->
-			<div id="slider">
-				<img src="https://agenciamaymi.com/uploads/blog/g8lE8zYtJv.png" alt="slider">
-			</div>
+			<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-inner">
+				  <div class="carousel-item active">
+					<img 
+						src="https://images.pexels.com/photos/3985062/pexels-photo-3985062.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+						class="d-block w-100" 
+						alt="Family shopping"
+					>
+				  </div>
+				  <div class="carousel-item">
+					<img 
+						src="https://images.pexels.com/photos/7129711/pexels-photo-7129711.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+						class="d-block w-100"
+						alt="Men shopping"
+					>
+				  </div>
+				  <div class="carousel-item">
+					<img
+						src="https://images.pexels.com/photos/1426191/pexels-photo-1426191.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+						class="d-block w-100"
+						alt="Women shopping"
+					>
+				  </div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+				  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+				  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				  <span class="visually-hidden">Next</span>
+				</button>
+			  </div>
 			<!-- Link titilante hacia las Ofertas -->
 			<a href="./pages/ofertas.html" class="link_oferta"><h2>Tabla de OFERTAS!!!</h2></a>
 
@@ -39,7 +70,7 @@
 			<!-- Buscador/Filtro de productos -->
 			<div class="product_filter">
 				<form action="">
-					<input type="text">	
+					<input type="text" placeholder="Nombre de articulo...">	
 					<select name="categoria" id="categoria">
 						<option value="cat-1">categoria 1</option>
 						<option value="cat-2">categoria 2</option>
@@ -199,5 +230,8 @@
 				<p>Horarios : 8:00hrs - 17:00hrs, Lun - Vie</p>
 			</div>
 		</footer>
+
+		<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 	</body>
 </html>

@@ -1,0 +1,32 @@
+/* Footer */
+.footer{
+	background: #ee4a36;
+    padding: 1rem 5vw;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 2rem;
+
+    @include media-768{
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        place-items: center;
+    }
+
+    div{
+        text-align: left;
+        align-self: center;
+    }
+
+    &__map_wrapper{
+        height: 15vh;
+	    width: 100%;
+    }
+
+    &__map_img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}

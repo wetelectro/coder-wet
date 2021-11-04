@@ -1,0 +1,25 @@
+@use './../utils/variables';
+/* Usando SASS */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+body{
+	font-family: 'Roboto', sans-serif;
+	color: $dark-font;
+}
+
+p{
+	font-weight: 300;
+    line-height: 1.3rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+h1,h2,h3,h4,h5,h6{
+	margin: 2rem 0 1rem 0px;
+}
+
+@for $i from 1 to 6 {
+	h#{$i}{
+		font-size: 1rem + 1rem * ( calc(1/6) * $i);
+	}
+}

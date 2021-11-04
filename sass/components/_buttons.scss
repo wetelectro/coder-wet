@@ -1,0 +1,14 @@
+/* Buttons */
+.button{
+	border: none;
+    background: #ee4a36;
+    color: white;
+    padding: 0.4rem 1rem;
+	cursor: pointer;
+
+	&:hover{
+		background: #da3520;
+	transition: 0.3s;
+	transform: scale(1.1);
+	}
+}

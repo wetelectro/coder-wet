@@ -1,0 +1,25 @@
+/* Offers-table */
+.offers-table{
+    width: 100%;
+    background: linear-gradient(45deg, rgb(13, 143, 163), rgb(44, 116, 80), rgb(182, 135, 15));
+    color: #ffffff;
+    border-spacing: 0;
+    border-collapse: collapse;
+
+    thead{
+        font-size: 125%;
+	    text-align: left;
+    }
+
+    tbody td,
+    thead th {
+        border: solid 3px #292929;
+        padding: 1rem;
+    }
+
+    li{
+        font-weight: 300;
+        margin: 0.75rem;
+        text-transform: capitalize;
+    }
+}
