@@ -1,8 +1,9 @@
+@use './../utils/variables';
 /* Offers-table */
 .offers-table{
     width: 100%;
-    background: linear-gradient(45deg, rgb(13, 143, 163), rgb(44, 116, 80), rgb(182, 135, 15));
-    color: #ffffff;
+    background: $accent-color;
+    color: $dark-font;
     border-spacing: 0;
     border-collapse: collapse;
 
@@ -11,9 +12,15 @@
 	    text-align: left;
     }
 
-    tbody td,
+    tbody td{
+        border: solid 3px #333333;
+        padding: 1rem;
+    }
+
     thead th {
-        border: solid 3px #292929;
+        border: solid 3px #333333;
+        background: $main-color;
+        color: $accent-color;
         padding: 1rem;
     }
 

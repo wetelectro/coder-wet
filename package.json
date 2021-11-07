@@ -1,7 +1,7 @@
 {
   "name": "coder-wet",
   "version": "1.0.0",
-  "description": "",
+  "description": "Proyecto del curso de Programacion Web en coderhouse, es una Tienda online.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",

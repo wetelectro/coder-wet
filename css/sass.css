@@ -240,8 +240,8 @@ h5 {
 /* Offers-table */
 .offers-table {
   width: 100%;
-  background: linear-gradient(45deg, #0d8fa3, #2c7450, #b6870f);
-  color: #ffffff;
+  background: #ffee71;
+  color: #242424;
   border-spacing: 0;
   border-collapse: collapse;
 }
@@ -249,9 +249,14 @@ h5 {
   font-size: 125%;
   text-align: left;
 }
-.offers-table tbody td,
+.offers-table tbody td {
+  border: solid 3px #333333;
+  padding: 1rem;
+}
 .offers-table thead th {
-  border: solid 3px #292929;
+  border: solid 3px #333333;
+  background: #ee4a36;
+  color: #ffee71;
   padding: 1rem;
 }
 .offers-table li {
@@ -314,12 +319,14 @@ h5 {
 .contact_form {
   display: flex;
   flex-direction: column;
+  width: 50%;
+  margin: auto;
 }
 
 .form_group {
   display: flex;
   flex-direction: column;
-  width: fit-content;
+  width: 100%;
   margin: 1rem 0px;
 }
 .form_group * {
@@ -348,6 +355,10 @@ h5 {
   place-items: center;
   padding: 0.6rem;
   background: #eeeeee;
+}
+
+form input[type=checkbox] {
+  margin: 0 0.5rem 0 0;
 }
 
 #accordionBootstrap {
