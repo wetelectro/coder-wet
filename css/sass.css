@@ -415,8 +415,10 @@ h5 {
   color: #ffee71;
   filter: drop-shadow(0 0 5px #00000060);
 }
-.header__logotipo {
-  font-size: 200%;
+.header__title {
+  font-size: 180%;
+  margin: 0;
+  margin-right: 0.25rem;
 }
 .header__logotipo a {
   display: flex;
@@ -426,9 +428,6 @@ h5 {
 }
 .header__logotipo a:hover {
   color: #ffee71;
-}
-.header__logotipo a span {
-  margin: 0 2.5px 0 0;
 }
 .header__logotipo a img {
   width: 40px;

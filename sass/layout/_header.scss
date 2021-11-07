@@ -30,9 +30,14 @@
 		}
 	}
 
-	&__logotipo {
-		font-size: 200%;
+	&__title{
+		font-size: 180%;
+		margin: 0;
+		margin-right: 0.25rem;
+	}
 
+	&__logotipo {
+	
 		a {
 			display: flex;
 			place-items: center;
@@ -43,9 +48,6 @@
 				color: #ffee71;;
 			}
 
-			span {
-				margin: 0 2.5px 0 0;
-			}
 			img {
 				width: 40px;
 				height: 40px;
